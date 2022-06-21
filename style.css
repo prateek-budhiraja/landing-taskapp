@@ -93,6 +93,8 @@ section {
 .features-list {
   margin: 0;
   padding-left: 0.1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
 }
 .features-list li {
   font-size: 1.1em;
@@ -206,4 +208,51 @@ nav li a:hover {
   float: right;
   margin: 0.5em;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu, .mobile-menu-exit {
+    display: none;
+  }
+
+  .navbar .container {
+    display: grid;
+    grid-template-columns: 180px auto;
+    justify-content: unset;
+  }
+
+  .navbar nav {
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar nav ul {
+    display: flex;
+  }
+  .navbar nav a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+  .navbar nav ul.primary-nav {
+    margin: 0;
+  }
+  .navbar nav li.active {
+    font-weight: bold;
+  }
+  .navbar nav li.go-premium-button a {
+    color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+    font-weight: bold;
+    border-radius: 5em;
+    margin-top: -0.2em;
+  }
+  .navbar nav li.go-premium-button a:hover {
+    background: var(--primary-color);
+    color: white;
+  }
 }/*# sourceMappingURL=style.css.map */
