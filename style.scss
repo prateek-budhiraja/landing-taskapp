@@ -264,7 +264,7 @@ nav {
     li.go-premium-button a {
       color: var(--primary-color);
       border: 3px solid var(--primary-color);
-      font-weight: bold;
+      // font-weight: bold;
       border-radius: 5em;
       margin-top: -.2em;
 
@@ -308,6 +308,57 @@ nav {
 
       .primary-cta {
         margin-right: 1em;
+      }
+    }
+    .features-list {
+      display: block;
+      margin-left: 5em;
+    }
+    li {
+      font-size: 1.4em;
+
+      &:before {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .features-section {
+      position: relative;
+      
+      img {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 350px;
+        bottom: -2em;
+      }
+    }
+
+    .testimonials-section ul {
+      display: flex;
+      li {
+        margin: 0 1em;
+      }
+    }
+
+    .contact-section {
+      position: relative;
+
+      .container {
+        display: flex;
+      }
+    }
+
+    .contact-right {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 45%;
+      height: 100%;
+
+      iframe {
+        height: 100%;
       }
     }
 }
