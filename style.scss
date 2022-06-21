@@ -30,7 +30,7 @@ body {
     }
   
     nav {
-      // display: none;
+      display: none;
     }
 
     .mobile-menu {
@@ -183,3 +183,42 @@ iframe {
   height: 300px;
 }
 
+nav.menu-btn {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background-color: #20272e;
+  height: 100vh;
+  padding: 1em;
+
+  ul.primary-nav {
+    margin-top: 5em;
+  }
+  li {
+    a {
+      color: white;
+      display: block;
+      text-decoration: none;
+      padding: .5em;
+      font-size: 1.3em;
+      text-align: right;
+      
+      &:hover {
+        font-weight: bold;
+      }
+    }
+
+  }
+}
+
+.mobile-menu-exit {
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
