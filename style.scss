@@ -334,7 +334,6 @@ nav {
         bottom: -2em;
       }
     }
-
     .testimonials-section ul {
       display: flex;
       li {
@@ -361,5 +360,25 @@ nav {
         height: 100%;
       }
     }
+    .features-section {
+      &:before {
+        content: '';
+        position: absolute;
+        width: 10%;
+        height: 20em;
+        background: var(--primary-color);
+        left: 0;
+        top: -4em;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      width: 120px;
+      height: 6em;
+      background: url('images/dots.svg');
+      left: 4.5em;
+      top: 2em;
+  }
+  }
 }
 
